@@ -46,4 +46,5 @@ button.addEventListener("click", () => {
     createGrid(size); 
     
 })
-document.body.appendChild(button);
+const header = document.querySelector("div")
+header.appendChild(button);
