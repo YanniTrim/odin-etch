@@ -33,6 +33,7 @@ function removeGrid() {
 }
 
 const button = document.createElement("button");
+button.textContent = "Create New Grid";
 button.addEventListener("click", () => {
     let size;
     while (true) {
@@ -45,4 +46,4 @@ button.addEventListener("click", () => {
     createGrid(size); 
     
 })
-containerDiv.appendChild(button);
+document.body.appendChild(button);
