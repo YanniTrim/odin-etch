@@ -4,6 +4,13 @@ function hoverBlack(){
     this.style.backgroundColor = "black";
 }
 
+function hoverColor() {
+    const redRand = Math.random()*255;
+    const greenRand = Math.random()*255;
+    const blueRand = Math.random()*255;
+    this.style.backgroundColor = `rgb(${redRand},${greenRand},${blueRand})`;
+}
+
 
 // Create 16x16 grid
 function createGrid(size) {
@@ -13,7 +20,7 @@ function createGrid(size) {
         for (let col = 0; col < size; col++) {
             const subDiv = document.createElement("div");
             subDiv.classList.add("item");
-            subDiv.addEventListener("mouseover", hoverBlack);
+            subDiv.addEventListener("mouseover", hoverColor);
             div.appendChild(subDiv);
         }
         containerDiv.appendChild(div);
