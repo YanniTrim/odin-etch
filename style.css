@@ -1,0 +1,17 @@
+#main-contain {
+}
+
+.row {
+    display: flex;
+    flex-direction: row;   
+}
+
+
+.item {
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    flex-basis: 100%;
+    aspect-ratio: 1;
+    
+}
